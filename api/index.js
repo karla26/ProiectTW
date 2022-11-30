@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGO_URL)
 
 app.use(express.json());
 
-app.use("/api/auth", authRoute);
+app.use("", authRoute);
 
 app.listen(8800, () =>{
     console.log('http://localhost:8800/')
